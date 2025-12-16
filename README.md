@@ -1,7 +1,7 @@
 # GPR data multipath-summation-with-topo-corrections
 
 
-Instructions on how to use the m files are in the main script within the directory "code".
+Instructions on how to use the m files are in the main script within the directory "Code".
 For the implementation of multi-path summation we use:
 1. The function "topomig2d_varV" downloaded from https://github.com/tinawunderlich/MultichannelGPR, under the GNU 3.0 licence and
 2. The package "hyperbola recognition" downloaded from https://github.com/lweileeds/hyperbola_recognition.
