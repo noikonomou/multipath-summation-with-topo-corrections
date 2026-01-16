@@ -23,7 +23,7 @@
 
 % 3. Place all the files ("Line18.mat","diffr_mat18.mat", "elev18.mat" and "rustaq_diffr18.png" in the directory
 % "hyperbola_recognition-main". Place the function "c3_hyperbola_fitting1.m", in the directory
-% "hyperbola_recognition-main". It is used instead of the "c3_hyperbola_fitting1.m" because it contains changes so that is works for GPR velocities.
+% "hyperbola_recognition-main". It is used instead of the "c3_hyperbola_fitting.m" because it contains changes so that is works for GPR velocities.
 % 
 % 4. Make sure that the path to the main directory "hyperbola_recognition-main" is set to Matlab.
 %
@@ -505,4 +505,5 @@ function [S] = KzOperator(Din,v,dx,dt);
  S = exp(i*w/v.*sqrt(ARG)*dz);
  S(index) = 0.0;
 end
+
 
