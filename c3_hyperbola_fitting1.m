@@ -118,7 +118,7 @@ output(i).xv=xx0;
 %FIT line x^2-t^2 over the half hyperbola
 starthy=floor(length(xs)/2)+1;
 xhy=((xs(starthy:end)-xs(starthy)).*ratex).^2;
-yhy=(ys(starthy:end).*ratey).^2;
+yhy=(ys(starthy:end).*ratey).^2; % assuming start time is zero
 p = polyfit(xhy,yhy,1);
 output(i).vhy=(4/p(1)).^(0.5);
 
@@ -137,6 +137,7 @@ output(i).vhy=(4/p(1)).^(0.5);
 
     end
 end 
+
 
 
 
