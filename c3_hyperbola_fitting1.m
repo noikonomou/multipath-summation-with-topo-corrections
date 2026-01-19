@@ -106,14 +106,7 @@ count1=0;
  
  % New dt and dx, based on the image png
 ratex=30/length(real_im(1,:));ratey=48.8759/length(real_im(:,1));% for rustaq
-tt0=min(-ys).*ratey;
-tt02=-ys(end).*ratey;
-xx0=xc.*ratex;
-xx02=xs(end).*ratex;
 
-% store the above
-output(i).yv=tt0;
-output(i).xv=xx0;
 
 %FIT line x^2-t^2 over the half hyperbola
 starthy=floor(length(xs)/2)+1;
@@ -137,6 +130,7 @@ output(i).vhy=(4/p(1)).^(0.5);
 
     end
 end 
+
 
 
 
