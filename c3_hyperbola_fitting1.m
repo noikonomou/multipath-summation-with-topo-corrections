@@ -108,7 +108,7 @@ count1=0;
 ratex=30/length(real_im(1,:));ratey=48.8759/length(real_im(:,1));% for rustaq
 
 tt0=min(-ys).*ratey;
-tt02=-ys(end);
+tt02=-ys(end).*ratex;
 xx0=xc.*ratex;
 xx02=xs(end).*ratex;
 
@@ -137,6 +137,7 @@ output(i).vhy=(4/p(1)).^(0.5);
 
     end
 end 
+
 
 
 
