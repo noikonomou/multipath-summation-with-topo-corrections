@@ -5,7 +5,7 @@
 % Economou, N., Douglas, K., Hessein, M., Al Hooti, K., Pizzimenti, S., Khan, M., Al Jahwari, N., 
 % Al Shaqsi, B., Al Abri, S., Al Hinaai, A., Al Kharusi, A., Al Alawi, M., Al Rawahi, R., 
 % Al Ismaili, S., 2026, A methodology for imaging Early Bronze Age structures buried in mounds at Al-Tikha, Oman, 
-% Archaeological Prospection, accepted.
+% Archaeological Prospection, 1-20.
 %______________________________________________________________________________________
 % These figures are showing the proposed methodology for multipath
 % summation and topography correction.
@@ -505,5 +505,6 @@ function [S] = KzOperator(Din,v,dx,dt);
  S = exp(i*w/v.*sqrt(ARG)*dz);
  S(index) = 0.0;
 end
+
 
 
